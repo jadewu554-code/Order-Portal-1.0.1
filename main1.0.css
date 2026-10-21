@@ -1,0 +1,52 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  cursor: none !important;
+}
+
+
+
+:root{
+  --BG-COLOR: #000;
+  --FNTFM: arial, sans-serif;
+  --FNTS: 1.2em;
+  --FNT-COLOR: #ffffff;
+  --BG-HG: 100vh;
+}
+
+.auto-padding{
+  padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+}
+
+.auto-margin{
+  margin: 1.5vh 1.5vw 1.5vh 1.5vw;
+}
+
+
+.offscreen{
+  position: absolute;
+  top: -10000;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background: var(--BG-COLOR);
+  font-family: var(--FNTFM);
+  font-size: var(--FNTS);
+  color: var(--FNT-COLOR);
+  min-height: var(--BG-HG);
+  display: flex;
+  flex-direction: column;
+}
+
+a{
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* // 1.0.0v // */
