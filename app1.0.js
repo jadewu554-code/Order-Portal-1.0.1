@@ -145,4 +145,4 @@ articleWrapFour.addEventListener("mouseout", () => {
   articleFour.style.fontWeight = 250
 })
 
- /* // 1.1v // */
+ /* // 1.2v // */

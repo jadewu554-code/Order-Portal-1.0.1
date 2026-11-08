@@ -102,6 +102,7 @@ transform: scale(67.3%);
   color: #fff;
   backdrop-filter: blur(2px);
   padding: 0vh 0vw 0vh 1vw;
+  outline: none;
 }
 
 #check-in{
@@ -186,7 +187,7 @@ font-family: "Urbanist", sans-serif;
  color: #fff;
  border: solid 1px #fff;
  cursor: pointer;
- transition: all ease-in-out 0.10s;
+ transition: all ease-in-out 0.18s;
  font-weight: 200;
  font-family: "Red Hat Display", sans-serif;;
 }
@@ -295,4 +296,4 @@ font-family: "Red Hat Display", sans-serif;;
     border: none;
 }
 
-/* // 1.0.3v // */
+/* // 1.0.4v // */

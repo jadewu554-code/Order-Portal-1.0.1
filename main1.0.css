@@ -49,4 +49,12 @@ a{
   color: #fff;
 }
 
-/* // 1.0.0v // */
+::selection{
+  background-color:#35353589;
+  color: #fff
+  
+}
+
+
+
+/* // 1.0.1v // */
