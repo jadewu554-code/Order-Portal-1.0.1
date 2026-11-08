@@ -76,19 +76,32 @@ mnElement.classList.toggle("active")
 
 
  /* // CURSOR // */
-
-document.addEventListener("mousemove", eventMouse) 
+let mouseX = 0;
+let mouseY = 0;
+let cursorX = 0;
+let cursorY = 0;
 
 function eventMouse(e) {
-  let x = e.clientX
-  let y = e.clientY
+  mouseX = e.clientX;
+  mouseY = e.clientY;
 
-  innerCursorElement.style.left = `${x}px`
-  innerCursorElement.style.top = `${y}px`
-  outerCursorElement.style.left = `${x}px`
-  outerCursorElement.style.top = `${y}px`
-
+  innerCursorElement.style.transform =
+    `translate3d(${mouseX}px, ${mouseY}px, 0) translate(-50%, -50%)`;
 }
+
+function animate() {
+  cursorX += (mouseX - cursorX) * 0.15;
+  cursorY += (mouseY - cursorY) * 0.15;
+
+  outerCursorElement.style.transform =
+    `translate3d(${cursorX}px, ${cursorY}px, 0) translate(-50%, -50%)`;
+
+  requestAnimationFrame(animate);
+}
+
+document.addEventListener("mousemove", eventMouse);
+requestAnimationFrame(animate);
+
 
 /* // Article Shading // */
 
